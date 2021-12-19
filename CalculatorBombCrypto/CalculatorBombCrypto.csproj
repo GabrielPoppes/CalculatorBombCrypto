@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Aplication\FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Aplication\FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Loading\FrmLoading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,7 +68,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Aplication\FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Loading\FrmLoading.resx">
       <DependentUpon>FrmLoading.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +88,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALCULADORA BOMBCRYPTO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CALCULADORA BOMBCRYPTO %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
